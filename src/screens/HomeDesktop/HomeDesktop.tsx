@@ -217,7 +217,7 @@ export const HomeDesktop = (): JSX.Element => {
                   <div 
                     className="absolute w-11 h-11 top-0 left-0 rounded-[100px] overflow-hidden"
                     style={{
-                      background: `linear-gradient(180deg, #925C40 0%, #C26B3A 100%)`
+                      background: `linear-gradient(180deg, #925C40  0%, #cd5a25 100%)`
                     }}
                   >
                     <img
