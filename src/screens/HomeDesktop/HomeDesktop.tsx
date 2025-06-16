@@ -70,7 +70,7 @@ export const HomeDesktop = (): JSX.Element => {
               <div className="flex flex-col items-center gap-10 relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex flex-col items-center gap-5 relative self-stretch w-full flex-[0_0_auto]">
                   {/* Feature badge */}
-                  <Badge className="inline-flex items-center justify-center gap-3 px-3.5 py-2 relative flex-[0_0_auto] rounded-[100px] border border-solid border-accent-dark-brown shadow-[inset_0px_0px_22px_rgba(var(--accent-orange-dark-rgb),0.4)] backdrop-blur-md backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(12px)_brightness(100%)] [background:radial-gradient(50%_50%_at_50%_50%,rgba(var(--accent-orange-dark-rgb))_0%,rgba(255,255,255,0.01)_85%)]">
+                  <Badge className="inline-flex items-center justify-center gap-3 px-3.5 py-2 relative flex-[0_0_auto] rounded-[100px] border border-solid border-accent-dark-brown shadow-[inset_0px_0px_22px_rgba(var(--accent-orange-dark-rgb),0.4)] backdrop-blur-md backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(12px)_brightness(100%)] [background:radial-gradient(50%_50%_at_50%_50%,rgba(255,255,255,0)_0%,rgba(255,255,255,0.01)_85%)]"> 
                     <div className="relative w-6 h-6">
                       <div className="relative h-6">
                         <img
