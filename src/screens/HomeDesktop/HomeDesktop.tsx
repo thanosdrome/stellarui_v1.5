@@ -104,7 +104,7 @@ export const HomeDesktop = (): JSX.Element => {
                 <Button 
                   className="h-[52px] px-6 py-4 relative rounded-[100px]"
                   style={{
-                    background: `linear-gradient(180deg, #925C40 0%, #C26B3A 100%)`
+                    background: `linear-gradient(180deg, #E0A784 0%, #C26B3A 100%)`
                   }}
                 >
                   <span className="relative w-fit mt-[-1.00px] [font-family:'Instrument_Sans',Helvetica] font-semibold text-gray-90 text-[17px] tracking-[0] leading-[20.4px] whitespace-nowrap">
