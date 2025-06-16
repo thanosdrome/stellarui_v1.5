@@ -138,7 +138,7 @@ export const HomeDesktop = (): JSX.Element => {
             <Card 
               className="flex flex-col h-[586px] items-start gap-[13.87px] p-5 relative self-stretch w-full rounded-[22px] border-solid border-black backdrop-blur-[23.58px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(23.58px)_brightness(100%)]"
               style={{
-                background: `radial-gradient(50% 50% at 50% 5%, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%), radial-gradient(50% 50% at 50% 2%, rgba(var(--accent-orange-light-rgb),1) 0%, rgba(var(--accent-orange-light-rgb),0) 100%), linear-gradient(0deg, rgba(var(--dark-background-rgb),1) 0%, rgba(var(--accent-dark-brown-rgb),1) 100%)`
+                background: `radial-gradient(circle,rgba(194, 107, 58, 1) 0%, rgba(67, 58, 59, 1) 35%, rgba(10, 10, 10, 1) 100%)`
               }}
             >
               <CardContent className="p-0 w-full h-full">
