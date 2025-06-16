@@ -153,7 +153,7 @@ export const HomeDesktop = (): JSX.Element => {
                 <img
                   className="w-full h-full object-cover rounded-[18px]"
                   alt="Image"
-                  src=""
+                  src="https://ranjanshu.com/docs.png"
                 />
 
                 <div 
