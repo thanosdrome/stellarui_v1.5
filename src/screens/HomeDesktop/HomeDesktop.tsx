@@ -144,9 +144,9 @@ export const HomeDesktop = (): JSX.Element => {
               <CardContent className="p-0 w-full h-full">
                 <div className="absolute w-[720px] h-[38px] top-[15px] left-72">
                   <div className="relative h-[38px]">
-                    <div className="absolute w-[38px] h-[720px] top-[-341px] left-[341px] bg-accent-orange-light rounded-[19px/360px] rotate-90 blur-[137px]" />
-                    <div className="absolute w-[38px] h-[720px] top-[-341px] left-[341px] bg-accent-orange-dark rounded-[19px/360px] rotate-90 blur-[42px]" />
-                    <div className="absolute w-[38px] h-[720px] top-[-341px] left-[341px] bg-accent-orange-light rounded-[19px/360px] rotate-90 blur-[92px]" />
+                    <div className="absolute w-[38px] h-[720px] top-[-341px] left-[341px] bg-[#E0A784] rounded-[19px/360px] rotate-90 blur-[137px]" />
+                    <div className="absolute w-[38px] h-[720px] top-[-341px] left-[341px] bg[#8A5B40] rounded-[19px/360px] rotate-90 blur-[42px]" />
+                    <div className="absolute w-[38px] h-[720px] top-[-341px] left-[341px] bg-[#C26B3A] rounded-[19px/360px] rotate-90 blur-[92px]" />
                   </div>
                 </div>
 
