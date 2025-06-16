@@ -1,0 +1,150 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --absolutewhite: rgba(255, 255, 255, 1);
+  --dark-12: rgba(16, 16, 45, 1);
+  --gray-70: rgba(174, 174, 184, 1);
+  --gray-90: rgba(229, 229, 231, 1);
+  --gray-97: rgba(247, 247, 248, 1);
+  --light-40: rgba(69, 69, 135, 1);
+  --light-95: rgba(238, 238, 246, 1);
+  --dark-background: #0a0a0a;
+  --dark-background-rgb: 10, 10, 10;
+  --accent-dark-brown: #1a1a1a;
+  --accent-dark-brown-rgb: 26, 26, 26;
+  --accent-orange-dark: #a05a00;
+  --accent-orange-dark-rgb: 160, 90, 0;
+  --accent-orange-light: #e07b00;
+  --accent-orange-light-rgb: 224, 123, 0;
+  --glow-light: #fff8e1;
+  --glow-light-rgb: 255, 248, 225;
+  --offset: 3px;
+}
+
+@keyframes circleLight {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0 0 60px 30px rgba(var(--accent-orange-dark-rgb), 0.3),
+      inset 0 0 30px rgba(var(--accent-orange-dark-rgb), 0.3);
+  }
+  50% {
+    box-shadow: 0 0 80px 40px rgba(var(--accent-orange-light-rgb), 0.4),
+      inset 0 0 50px rgba(var(--accent-orange-light-rgb), 0.4);
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 60px 30px rgba(var(--accent-orange-dark-rgb), 0.3),
+      inset 0 0 30px rgba(var(--accent-orange-dark-rgb), 0.3);
+  }
+}
+
+.circle-light {
+  animation: circleLight 8s linear infinite;
+  border: 1px solid rgba(var(--accent-dark-brown-rgb), 0.4);
+  backdrop-filter: blur(5px);
+  background: radial-gradient(
+    circle at center,
+    rgba(var(--accent-orange-dark-rgb), 0.05),
+    transparent
+  );
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: var(--dark-background-rgb);
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215.4 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
