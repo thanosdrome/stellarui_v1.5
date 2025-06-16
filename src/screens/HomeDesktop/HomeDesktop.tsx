@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Badge } from "../../components/ui/badge";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
+import { WaitlistModal } from "../../components/WaitlistModal";
 
 export const HomeDesktop = (): JSX.Element => {
+  const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
+
   const menuItems = [
     { label: "Home", active: true },
     { label: "Feature", active: false },
@@ -243,7 +246,8 @@ export const HomeDesktop = (): JSX.Element => {
                   />
 
                   <Button 
-                    className="h-[52px] px-6 py-4 relative rounded-[100px]"
+                    onClick={() => setIsWaitlistModalOpen(true)}
+                    className="h-[52px] px-6 py-4 relative rounded-[100px] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
                     style={{
                       background: `linear-gradient(180deg, #925C40  0%, #cd5a25 100%)`
                     }}
@@ -273,6 +277,12 @@ export const HomeDesktop = (): JSX.Element => {
           </Card>
         </div>
       </div>
+
+      {/* Waitlist Modal */}
+      <WaitlistModal 
+        isOpen={isWaitlistModalOpen}
+        onClose={() => setIsWaitlistModalOpen(false)}
+      />
     </div>
   );
 };
