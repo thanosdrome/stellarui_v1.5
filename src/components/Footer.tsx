@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
                   height={44}
                 />
               </div>
-              <h2 className="text-white font-bold text-[150px]">StellarUI</h2>
+              <h2 className="text-white font-bold text-lg">StellarUI</h2> 
             </div>
             
             {/* Copyright */}
