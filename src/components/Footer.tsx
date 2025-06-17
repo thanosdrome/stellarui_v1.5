@@ -81,18 +81,20 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Large STELLAR UI text */}
+        {/* Large STELLAR UI text - Bold and Thick */}
         <div className="relative flex justify-center">
           <h1 
-            className="text-[11rem] leading-none bg-gradient-to-t from-[#292929] to-[#000000] tracking-wider select-none pointer-events-none bg-clip-text"
+            className="text-[11rem] leading-none tracking-wider select-none pointer-events-none"
             style={{
-              color: 'rgba(255, 255, 255, 0.03)',
+              color: 'rgba(255, 255, 255, 0.08)',
               fontFamily: 'Bricolage Grotesque, Helvetica',
               textTransform: 'uppercase',
-              fontWeight: '800',
+              fontWeight: '900',
+              textShadow: '0 0 20px rgba(255, 255, 255, 0.02)',
+              WebkitTextStroke: '1px rgba(255, 255, 255, 0.05)',
             }}
           >
-            Stellar Ui 
+            STELLAR UI
           </h1>
         </div>
       </div>
