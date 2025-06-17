@@ -86,7 +86,7 @@ export const Footer: React.FC = () => {
           <h1 
             className="text-[200px] font-bold leading-none tracking-wider select-none pointer-events-none"
             style={{
-              color: 'rgba(255, 255, 255, 0.03)',
+              color: 'linear-gradient(0deg,rgba(69, 69, 69, 1) 35%, rgba(10, 10, 10, 1) 100%)',
               fontFamily: 'Bricolage Grotesque, Helvetica',
               textTransform: 'uppercase',
               letterSpacing: '0.1em'
