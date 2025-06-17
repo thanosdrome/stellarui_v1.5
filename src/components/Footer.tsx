@@ -91,7 +91,7 @@ export const Footer: React.FC = () => {
               textTransform: 'uppercase',
               fontWeight: '900',
               textShadow: '0 0 20px rgba(255, 255, 255, 0.02)',
-              textShadow: '0 0 20px rgba(255, 255, 255, 0.02)',
+              WebkitTextStroke: '1px rgba(255, 255, 255, 0.05)', 
             }}
           >
             STELLAR UI
