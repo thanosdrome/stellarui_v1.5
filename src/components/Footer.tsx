@@ -89,6 +89,7 @@ export const Footer: React.FC = () => {
               color: 'rgba(255, 255, 255, 0.03)',
               fontFamily: 'Bricolage Grotesque, Helvetica',
               textTransform: 'uppercase',
+              fontWeight: '800',
               letterSpacing: '0.1em'
             }}
           >
