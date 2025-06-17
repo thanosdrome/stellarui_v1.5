@@ -87,7 +87,7 @@ export const Footer: React.FC = () => {
             className="text-[11rem] font-black leading-none bg-gradient-to-t from-[#292929] to-[#000000] tracking-wider select-none pointer-events-none bg-clip-text"
             style={{
               color: 'rgba(255, 255, 255, 0.03)',
-              fontFamily: 'Bricolage Grotesque, Helvetica',
+              fontFamily: 'Inter, Helvetica',
               letterSpacing: '0.1em'
             }}
           >
