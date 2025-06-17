@@ -84,7 +84,7 @@ export const Footer: React.FC = () => {
         {/* Large STELLAR UI text */}
         <div className="relative">
           <h1 
-            className="text-[120px] font-bold leading-none tracking-wider select-none pointer-events-none"
+            className="text-[220px] font-bold leading-none tracking-wider select-none pointer-events-none"
             style={{
               color: 'rgba(255, 255, 255, 0.03)',
               fontFamily: 'Bricolage Grotesque, Helvetica',
