@@ -90,7 +90,6 @@ export const Footer: React.FC = () => {
               fontFamily: 'Bricolage Grotesque, Helvetica',
               textTransform: 'uppercase',
               fontWeight: '800',
-              letterSpacing: '0.1em'
             }}
           >
             Stellar Ui 
