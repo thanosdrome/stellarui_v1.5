@@ -82,7 +82,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Large STELLAR UI text */}
-        <div className="relative">
+        <div className="relative center">
           <h1 
             className="text-[180px] font-black leading-none bg-gradient-to-t from-[#121212] to-[#0A0A0A] tracking-wider select-none pointer-events-none bg-clip-text"
             style={{
