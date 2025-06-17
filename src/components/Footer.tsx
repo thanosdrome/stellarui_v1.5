@@ -89,8 +89,8 @@ export const Footer: React.FC = () => {
               color: 'rgba(255, 255, 255, 0.02)',
               fontFamily: 'Bricolage Grotesque, Helvetica',
               textTransform: 'uppercase',
-              fontWeight: '900',
-              textShadow: '0 0 20px rgba(255, 255, 255, 0.02)',
+              fontWeight: '900', 
+              // textShadow: '0 0 20px rgba(255, 255, 255, 0.02)',
               WebkitTextStroke: '1px rgba(255, 255, 255, 0.05)', 
             }}
           >
