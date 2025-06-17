@@ -91,7 +91,7 @@ export const Footer: React.FC = () => {
               letterSpacing: '0.1em'
             }}
           >
-            Stellar Ui
+            DevStudio
           </h1>
         </div>
       </div>
