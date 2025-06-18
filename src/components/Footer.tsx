@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
         {/* Large STELLAR UI text - Bold and Thick */}
         <div className="relative flex justify-center">
           <h1 
-            className="text-[11rem] bg-clip-text bg-gradient-to-t from-[#292929] to-[#000000] leading-none tracking-wider select-none pointer-events-none"
+            className="text-[12rem] bg-clip-text bg-gradient-to-t from-[#292929] to-[#000000] leading-none tracking-wider select-none pointer-events-none"
             style={{
               color: 'rgba(255, 255, 255, 0.02)',
               fontFamily: 'Bricolage Grotesque, Helvetica',
