@@ -4,6 +4,7 @@ import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { WaitlistModal } from "../../components/WaitlistModal";
 import { Footer } from "../../components/Footer";
+import { PointerTracker } from "../../components/PointerTracker";
 
 export const HomeDesktop = (): JSX.Element => {
   const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
@@ -17,14 +18,15 @@ export const HomeDesktop = (): JSX.Element => {
 
   return (
     <div className="flex flex-col w-full min-h-screen">
-      <div 
+      <PointerTracker />
+      <div
         className="flex flex-row justify-center w-full"
         style={{
           backgroundImage: "url('/footer-gradient.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center bottom",
           backgroundRepeat: "no-repeat",
-          backgroundColor: "var(--dark-background)"
+          backgroundColor: "var(--dark-background)",
         }}
       >
         <div className="overflow-hidden w-[1440px] h-[1024px]">
@@ -75,7 +77,7 @@ export const HomeDesktop = (): JSX.Element => {
                 <div className="flex flex-col items-center gap-10 relative self-stretch w-full flex-[0_0_auto]">
                   <div className="flex flex-col items-center gap-5 relative self-stretch w-full flex-[0_0_auto]">
                     {/* Feature badge */}
-                    <Badge className="inline-flex items-center justify-center gap-3 px-3.5 py-2 relative flex-[0_0_auto] rounded-[100px] border border-solid border-accent-dark-brown shadow-[inset_0px_0px_22px_rgba(var(--accent-orange-dark-rgb),0.4)] backdrop-blur-md backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(12px)_brightness(100%)] [background:radial-gradient(50%_50%_at_50%_50%,rgba(255,255,255,0)_0%,rgba(255,255,255,0.01)_85%)]"> 
+                    <Badge className="inline-flex items-center justify-center gap-3 px-3.5 py-2 relative flex-[0_0_auto] rounded-[100px] border border-solid border-accent-dark-brown shadow-[inset_0px_0px_22px_rgba(var(--accent-orange-dark-rgb),0.4)] backdrop-blur-md backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(12px)_brightness(100%)] [background:radial-gradient(50%_50%_at_50%_50%,rgba(255,255,255,0)_0%,rgba(255,255,255,0.01)_85%)]">
                       <div className="relative w-6 h-6">
                         <div className="relative h-6">
                           <img
@@ -106,10 +108,10 @@ export const HomeDesktop = (): JSX.Element => {
                   </div>
 
                   {/* CTA Button */}
-                  <Button 
+                  <Button
                     className="h-[52px] px-6 py-4 relative rounded-[100px]"
                     style={{
-                      background: `linear-gradient(180deg, #925C40  0%, #cd5a25 100%)`
+                      background: `linear-gradient(180deg, #925C40  0%, #cd5a25 100%)`,
                     }}
                   >
                     <span className="relative w-fit mt-[-1.00px] [font-family:'Instrument_Sans',Helvetica] font-semibold text-gray-90 text-[17px] tracking-[0] leading-[20.4px] whitespace-nowrap">
@@ -140,10 +142,10 @@ export const HomeDesktop = (): JSX.Element => {
               </div>
 
               {/* Dashboard preview */}
-              <Card 
+              <Card
                 className="flex flex-col h-[586px] items-start gap-[13.87px] p-5 relative self-stretch w-full rounded-[22px] border-solid border-black backdrop-blur-[23.58px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(23.58px)_brightness(100%)]"
                 style={{
-                  background: `radial-gradient(circle,rgba(194, 107, 58, 1) 0%, rgba(67, 58, 59, 1) 35%, rgba(10, 10, 10, 1) 100%)`
+                  background: `radial-gradient(circle,rgba(194, 107, 58, 1) 0%, rgba(67, 58, 59, 1) 35%, rgba(10, 10, 10, 1) 100%)`,
                 }}
               >
                 <CardContent className="p-0 w-full h-full">
@@ -161,10 +163,10 @@ export const HomeDesktop = (): JSX.Element => {
                     src="https://ranjanshu.com/docs.png"
                   />
 
-                  <div 
+                  <div
                     className="absolute w-[1337px] h-[213px] top-[373px] -left-2"
                     style={{
-                      background: `linear-gradient(180deg, rgba(var(--dark-background-rgb),0) 0%, rgba(var(--dark-background-rgb),1) 81%)`
+                      background: `linear-gradient(180deg, rgba(var(--dark-background-rgb),0) 0%, rgba(var(--dark-background-rgb),1) 81%)`,
                     }}
                   />
                 </CardContent>
@@ -219,10 +221,10 @@ export const HomeDesktop = (): JSX.Element => {
                 <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
                   {/* Logo */}
                   <div className="relative w-[120px] h-11">
-                    <div 
+                    <div
                       className="absolute w-11 h-11 top-0 left-0 rounded-[100px] overflow-hidden"
                       style={{
-                        background: `linear-gradient(180deg, #925C40  0%, #cd5a25 100%)`
+                        background: `linear-gradient(180deg, #925C40  0%, #cd5a25 100%)`,
                       }}
                     >
                       <img
@@ -247,11 +249,11 @@ export const HomeDesktop = (): JSX.Element => {
                       src="/icon-container-1.svg"
                     />
 
-                    <Button 
+                    <Button
                       onClick={() => setIsWaitlistModalOpen(true)}
                       className="h-[52px] px-6 py-4 relative rounded-[100px] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
                       style={{
-                        background: `linear-gradient(180deg, #925C40  0%, #cd5a25 100%)`
+                        background: `linear-gradient(180deg, #925C40  0%, #cd5a25 100%)`,
                       }}
                     >
                       <span className="relative w-fit mt-[-1.00px] [font-family:'Instrument_Sans',Helvetica] font-semibold text-gray-90 text-[17px] tracking-[0] leading-[20.4px] whitespace-nowrap">
@@ -285,7 +287,7 @@ export const HomeDesktop = (): JSX.Element => {
       <Footer />
 
       {/* Waitlist Modal */}
-      <WaitlistModal 
+      <WaitlistModal
         isOpen={isWaitlistModalOpen}
         onClose={() => setIsWaitlistModalOpen(false)}
       />
