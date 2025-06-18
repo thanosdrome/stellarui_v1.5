@@ -50,7 +50,6 @@ export const Footer: React.FC = () => {
             <div className="flex flex-col gap-4">
               <h3 className="text-white font-semibold text-base">Socials</h3>
               <ul className="flex flex-col gap-3">
-                <li><a href="#" className="text-gray-70 hover:text-white transition-colors text-sm">Facebook</a></li>
                 <li><a href="#" className="text-gray-70 hover:text-white transition-colors text-sm">Instagram</a></li>
                 <li><a href="#" className="text-gray-70 hover:text-white transition-colors text-sm">Twitter</a></li>
                 <li><a href="#" className="text-gray-70 hover:text-white transition-colors text-sm">LinkedIn</a></li>
