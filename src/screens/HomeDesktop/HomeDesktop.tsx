@@ -100,9 +100,8 @@ export const HomeDesktop = (): JSX.Element => {
                       </h1>
 
                       <p className="relative self-stretch [font-family:'Instrument_Sans',Helvetica] font-medium text-gray-70 text-base text-center tracking-[0] leading-6 animate-fade-in-up animate-delay-400">
-                        Empower your business with Bester&apos;s AI-driven
-                        solutions designed to streamline <br />
-                        operations and enhance customer relationships.
+                        Transform your UI workflow with StellarUI—where sleek design <br />
+                       meets blazing-fast development.
                       </p>
                     </div>
                   </div>
