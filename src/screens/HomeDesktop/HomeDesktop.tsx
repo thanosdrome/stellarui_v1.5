@@ -175,7 +175,7 @@ export const HomeDesktop = (): JSX.Element => {
 
             {/* Navigation bar */}
             <Card
-              className="flex flex-col w-[893px] items-start gap-2.5 pl-4 pr-3 py-2.5 absolute top-[30px] left-[274px] rounded-[119.38px] border-none backdrop-blur-[126.3px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(126.3px)_brightness(100%)] animate-fade-in-down"
+              className="flex flex-col w-[893px] items-start gap-2.5 pl-4 pr-3 py-0.5 absolute top-[30px] left-[274px] rounded-[119.38px] border-none backdrop-blur-[126.3px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(126.3px)_brightness(100%)] animate-fade-in-down"
               style={{
                 background: `linear-gradient(90deg, var(--dark-background) 0%, var(--accent-dark-brown) 100%)`,
                 borderRadius: "50px",
