@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
         {/* Top section with logo and links */}
         <div className="flex justify-between items-start mb-16">
           {/* Logo and copyright */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 animate-fade-in-up animate-delay-100">
             {/* Logo */}
             <div className="flex items-center gap-3">
               <div 
@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
           {/* Link columns */}
           <div className="flex gap-16">
             {/* Pages */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 animate-fade-in-up animate-delay-200">
               <h3 className="text-white font-semibold text-base">Pages</h3>
               <ul className="flex flex-col gap-3">
                 <li><a href="#" className="text-gray-70 hover:text-white transition-colors text-sm">All Products</a></li>
@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
             </div>
 
             {/* Socials */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 animate-fade-in-up animate-delay-300">
               <h3 className="text-white font-semibold text-base">Socials</h3>
               <ul className="flex flex-col gap-3">
                 <li><a href="#" className="text-gray-70 hover:text-white transition-colors text-sm">Instagram</a></li>
@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
             </div>
 
             {/* Legal */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 animate-fade-in-up animate-delay-400">
               <h3 className="text-white font-semibold text-base">Legal</h3>
               <ul className="flex flex-col gap-3">
                 <li><a href="#" className="text-gray-70 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
             </div>
 
             {/* Register */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 animate-fade-in-up animate-delay-500">
               <h3 className="text-white font-semibold text-base">Register</h3>
               <ul className="flex flex-col gap-3">
                 <li><a href="#" className="text-gray-70 hover:text-white transition-colors text-sm">Sign Up</a></li>
@@ -79,7 +79,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Large STELLAR UI text - Bold and Thick */}
-        <div className="relative flex justify-center">
+        <div className="relative flex justify-center animate-fade-in-scale animate-delay-600">
           <h1 
             className="text-[13rem] bg-clip-text bg-gradient-to-t from-[#292929] to-[#000000] leading-none tracking-wider select-none pointer-events-none"
             style={{
