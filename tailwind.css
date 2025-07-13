@@ -249,7 +249,7 @@
 
 @layer base {
   html {
-    font-size: 62.5%; /* 1rem = 10px for easier conversion */
+    font-size: 62.5%; /* 1rem = 10px - scales with browser zoom */
   }
 
   * {
@@ -257,8 +257,8 @@
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-size: 1.6rem; /* 16px default readable text size */
+    @apply bg-background text-foreground; 
+    font-size: 1.6rem; /* 16px - scales proportionally with zoom */
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }

@@ -57,14 +57,14 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
   return (
     <Dialog open={isOpen} onOpenChange={handleOpenChange}>
       <DialogContent 
-        className="sm:max-w-md border-accent-dark-brown backdrop-blur-md"
+        className="sm:max-w-[44.8rem] border-accent-dark-brown backdrop-blur-[1.2rem]"
         style={{
           background: `linear-gradient(135deg, rgba(var(--dark-background-rgb), 0.95) 0%, rgba(var(--accent-dark-brown-rgb), 0.8) 100%)`,
-          backdropFilter: "blur(20px)",
+          backdropFilter: "blur(2rem)",
         }}
       >
         <DialogHeader className="text-center">
-          <DialogTitle className="text-2xl font-bold text-white mb-2">
+          <DialogTitle className="text-[2.4rem] font-bold text-white mb-[0.8rem]">
             {isSubmitted ? "Welcome aboard! 🎉" : "Join the Waitlist"}
           </DialogTitle>
           <DialogDescription className="text-gray-70">
@@ -76,15 +76,15 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
         </DialogHeader>
 
         {!isSubmitted ? (
-          <form onSubmit={handleSubmit} className="space-y-4 mt-6">
-            <div className="space-y-2">
+          <form onSubmit={handleSubmit} className="space-y-[1.6rem] mt-[2.4rem]">
+            <div className="space-y-[0.8rem]">
               <Input
                 type="email"
                 placeholder="Enter your email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="h-12 bg-black/20 border-accent-dark-brown text-white placeholder:text-gray-70 focus:border-accent-orange-light focus:ring-accent-orange-light/20"
+                className="h-[4.8rem] bg-black/20 border-accent-dark-brown text-white placeholder:text-gray-70 focus:border-accent-orange-light focus:ring-accent-orange-light/20"
                 disabled={isSubmitting}
               />
             </div>
@@ -92,7 +92,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
             <Button
               type="submit"
               disabled={isSubmitting || !email}
-              className="w-full h-12 text-base font-semibold rounded-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
+              className="w-full h-[4.8rem] text-[1.6rem] font-semibold rounded-[0.8rem] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
               style={{
                 background: isSubmitting 
                   ? "linear-gradient(180deg, #6b4423 0%, #8b4a2a 100%)"
@@ -101,8 +101,8 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
               }}
             >
               {isSubmitting ? (
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                <div className="flex items-center gap-[0.8rem]">
+                  <div className="w-[1.6rem] h-[1.6rem] border-[0.2rem] border-white/30 border-t-white rounded-full animate-spin" />
                   Joining...
                 </div>
               ) : (
@@ -111,10 +111,10 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
             </Button>
           </form>
         ) : (
-          <div className="flex flex-col items-center py-6">
-            <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mb-4">
+          <div className="flex flex-col items-center py-[2.4rem]">
+            <div className="w-[6.4rem] h-[6.4rem] bg-green-500/20 rounded-full flex items-center justify-center mb-[1.6rem]">
               <svg
-                className="w-8 h-8 text-green-400"
+                className="w-[3.2rem] h-[3.2rem] text-green-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -128,12 +128,12 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
               </svg>
             </div>
             <p className="text-white font-medium">Successfully joined!</p>
-            <p className="text-gray-70 text-sm mt-1">Check your email for confirmation</p>
+            <p className="text-gray-70 text-[1.4rem] mt-[0.4rem]">Check your email for confirmation</p>
           </div>
         )}
 
-        <div className="text-center mt-4">
-          <p className="text-xs text-gray-70">
+        <div className="text-center mt-[1.6rem]">
+          <p className="text-[1.2rem] text-gray-70">
             No spam, unsubscribe at any time.
           </p>
         </div>
