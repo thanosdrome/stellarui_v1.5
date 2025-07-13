@@ -248,17 +248,12 @@
 }
 
 @layer base {
-  html {
-    font-size: 62.5%; /* 1rem = 10px - scales with browser zoom */
-  }
-
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground; 
-    font-size: 1.6rem; /* 16px - scales proportionally with zoom */
+    @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }

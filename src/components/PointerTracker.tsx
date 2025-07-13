@@ -34,7 +34,7 @@ export const PointerTracker: React.FC = () => {
     <div
       className="pointer-events-none fixed inset-0 z-50 transition-opacity duration-700"
       style={{
-        background: `radial-gradient(15rem circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(224, 167, 132, 0.15) 0%, rgba(194, 107, 58, 0.08) 30%, transparent 80%)`,
+        background: `radial-gradient(150px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(224, 167, 132, 0.15) 0%, rgba(194, 107, 58, 0.08) 30%, transparent 80%)`,
         mixBlendMode: "screen",
       }}
     />

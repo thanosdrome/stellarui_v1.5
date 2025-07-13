@@ -57,17 +57,17 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
   return (
     <Dialog open={isOpen} onOpenChange={handleOpenChange}>
       <DialogContent 
-        className="w-[90vw] max-w-[40rem] sm:max-w-[44.8rem] border-accent-dark-brown backdrop-blur-[1.2rem] mx-[1rem]"
+        className="sm:max-w-md border-accent-dark-brown backdrop-blur-md"
         style={{
           background: `linear-gradient(135deg, rgba(var(--dark-background-rgb), 0.95) 0%, rgba(var(--accent-dark-brown-rgb), 0.8) 100%)`,
-          backdropFilter: "blur(2rem)",
+          backdropFilter: "blur(20px)",
         }}
       >
         <DialogHeader className="text-center">
-          <DialogTitle className="text-[1.8rem] sm:text-[2.2rem] lg:text-[2.4rem] font-bold text-white mb-[0.8rem]">
+          <DialogTitle className="text-2xl font-bold text-white mb-2">
             {isSubmitted ? "Welcome aboard! 🎉" : "Join the Waitlist"}
           </DialogTitle>
-          <DialogDescription className="text-gray-70 text-[1.2rem] sm:text-[1.4rem] px-[1rem] sm:px-0">
+          <DialogDescription className="text-gray-70">
             {isSubmitted 
               ? "Thank you for joining! We'll notify you when StellarUI launches."
               : "Be the first to experience the future of UI design. Get early access and exclusive updates."
@@ -76,15 +76,15 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
         </DialogHeader>
 
         {!isSubmitted ? (
-          <form onSubmit={handleSubmit} className="space-y-[1.6rem] mt-[1.5rem] sm:mt-[2.4rem] px-[1rem] sm:px-0">
-            <div className="space-y-[0.8rem]">
+          <form onSubmit={handleSubmit} className="space-y-4 mt-6">
+            <div className="space-y-2">
               <Input
                 type="email"
                 placeholder="Enter your email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="h-[4rem] sm:h-[4.8rem] bg-black/20 border-accent-dark-brown text-white placeholder:text-gray-70 focus:border-accent-orange-light focus:ring-accent-orange-light/20 text-[1.4rem] sm:text-[1.6rem]"
+                className="h-12 bg-black/20 border-accent-dark-brown text-white placeholder:text-gray-70 focus:border-accent-orange-light focus:ring-accent-orange-light/20"
                 disabled={isSubmitting}
               />
             </div>
@@ -92,7 +92,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
             <Button
               type="submit"
               disabled={isSubmitting || !email}
-              className="w-full h-[4rem] sm:h-[4.8rem] text-[1.4rem] sm:text-[1.6rem] font-semibold rounded-[0.8rem] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
+              className="w-full h-12 text-base font-semibold rounded-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
               style={{
                 background: isSubmitting 
                   ? "linear-gradient(180deg, #6b4423 0%, #8b4a2a 100%)"
@@ -101,8 +101,8 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
               }}
             >
               {isSubmitting ? (
-                <div className="flex items-center gap-[0.8rem]">
-                  <div className="w-[1.4rem] h-[1.4rem] sm:w-[1.6rem] sm:h-[1.6rem] border-[0.2rem] border-white/30 border-t-white rounded-full animate-spin" />
+                <div className="flex items-center gap-2">
+                  <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                   Joining...
                 </div>
               ) : (
@@ -111,10 +111,10 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
             </Button>
           </form>
         ) : (
-          <div className="flex flex-col items-center py-[1.5rem] sm:py-[2.4rem] px-[1rem] sm:px-0">
-            <div className="w-[5rem] h-[5rem] sm:w-[6.4rem] sm:h-[6.4rem] bg-green-500/20 rounded-full flex items-center justify-center mb-[1.6rem]">
+          <div className="flex flex-col items-center py-6">
+            <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mb-4">
               <svg
-                className="w-[2.5rem] h-[2.5rem] sm:w-[3.2rem] sm:h-[3.2rem] text-green-400"
+                className="w-8 h-8 text-green-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -127,13 +127,13 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({
                 />
               </svg>
             </div>
-            <p className="text-white font-medium text-[1.4rem] sm:text-[1.6rem]">Successfully joined!</p>
-            <p className="text-gray-70 text-[1.2rem] sm:text-[1.4rem] mt-[0.4rem] text-center">Check your email for confirmation</p>
+            <p className="text-white font-medium">Successfully joined!</p>
+            <p className="text-gray-70 text-sm mt-1">Check your email for confirmation</p>
           </div>
         )}
 
-        <div className="text-center mt-[1rem] sm:mt-[1.6rem] px-[1rem] sm:px-0">
-          <p className="text-[1rem] sm:text-[1.2rem] text-gray-70">
+        <div className="text-center mt-4">
+          <p className="text-xs text-gray-70">
             No spam, unsubscribe at any time.
           </p>
         </div>
