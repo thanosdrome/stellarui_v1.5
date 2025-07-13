@@ -4,7 +4,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className="w-full bg-dark-background text-white relative overflow-hidden">
       {/* Main footer content */}
-      <div className="max-w-[1440px] mx-auto px-[73px] pt-16 pb-8">
+      <div className="max-w-[144rem] mx-auto px-[7.3rem] pt-16 pb-8">
         {/* Top section with logo and links */}
         <div className="flex justify-between items-start mb-16">
           {/* Logo and copyright */}
@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <div 
-                className="w-11 h-11 rounded-full overflow-hidden flex items-center justify-center"
+                className="w-[4.4rem] h-[4.4rem] rounded-full overflow-hidden flex items-center justify-center"
                 style={{
                   background: `linear-gradient(180deg, #925C40 0%, #cd5a25 100%)`
                 }}
@@ -21,15 +21,15 @@ export const Footer: React.FC = () => {
                   className="scale-75"
                   alt="StellarUI Logo"
                   src="/stellar.png"
-                  width={44}
-                  height={44}
+                  width="4.4rem"
+                  height="4.4rem"
                 />
               </div>
               <h2 className="text-white font-bold text-lg">StellarUI</h2> 
             </div>
             
             {/* Copyright */}
-            <p className="text-gray-70 text-sm max-w-[300px]">
+            <p className="text-gray-70 text-sm max-w-[30rem]">
               © copyright StellarUI 2024. All rights reserved.
             </p>
           </div>
@@ -88,7 +88,7 @@ export const Footer: React.FC = () => {
               textTransform: 'uppercase',
               fontWeight: '900', 
               // textShadow: '0 0 20px rgba(255, 255, 255, 0.02)',
-              WebkitTextStroke: '1px rgba(255, 255, 255, 0.05)', 
+              WebkitTextStroke: '0.1rem rgba(255, 255, 255, 0.05)', 
             }}
           >
             STELLAR UI
